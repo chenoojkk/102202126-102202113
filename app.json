@@ -1,0 +1,68 @@
+{
+  "usingComponents": {
+    "van-search": "@vant/weapp/search/index",
+    "van-divider": "@vant/weapp/divider/index",
+    "van-grid": "@vant/weapp/grid/index",
+    "van-grid-item": "@vant/weapp/grid-item/index",
+    "van-card": "@vant/weapp/card/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index"
+  },
+  "pages": [
+    "pages/login/login",
+    "pages/user/user",
+    "pages/message/message",
+    "pages/friends/friends",
+    "pages/chat/chat",
+    "pages/register/register",
+    "pages/homepage/homepage",
+    "pages/projectintro/projectintro",
+    "pages/changeInformation/changeInformation",
+    "pages/IdentityAuthentication/IdentityAuthentication",
+    "pages/IdentityAuthentication/teacher/teacher",
+    "pages/IdentityAuthentication/student/student",
+    "pages/publishsubject/publishsubject",
+    "pages/myprojects/myprojects",
+    "pages/mp/mp",
+    "pages/searchinfo/searchinfo"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "聊天室",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#9c9d9b",
+    "backgroundColor": "#fff",
+    "selectedColor": "#0A44DF",
+    "list": [
+      {
+        "pagePath": "pages/homepage/homepage",
+        "text": "首页",
+        "iconPath": "images/icon/index.png",
+        "selectedIconPath": "images/icon/index.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息",
+        "iconPath": "images/icon/message.png",
+        "selectedIconPath": "images/icon/message.png"
+      },
+      {
+        "pagePath": "pages/friends/friends",
+        "text": "联系人",
+        "iconPath": "images/icon/friends.png",
+        "selectedIconPath": "images/icon/friends.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "个人中心",
+        "iconPath": "images/icon/user.png",
+        "selectedIconPath": "images/icon/user.png"
+      }
+    ]
+  }
+}
