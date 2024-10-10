@@ -1,0 +1,5 @@
+<!--pages/IdentityAuthentication/IdentityAuthentication.wxml-->
+<van-cell-group>
+  <van-cell title="老师认证" size="large" is-link bindtap="teacher" />
+  <van-cell title="学生认证" size="large" is-link bindtap="student"/>
+</van-cell-group>

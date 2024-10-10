@@ -1,0 +1,62 @@
+swiper {
+  width: 750rpx;
+  height: 400rpx;
+}
+image {
+  width: 100%;
+  height: 100%;
+}
+
+
+.custom-search {
+  width: 650rpx;
+  flex: 1;
+  margin-right: -2px; /* Adjust the right margin as needed */
+}
+
+.plus-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4fc08d; /* Match the background color */
+  padding: 0 10px; /* Add padding for spacing */
+}
+
+.project-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  color: rgb(0, 0, 0); /* Optional: Change text color for better visibility */
+  font-size: 24px; /* Adjust the font size as needed */
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.search-button {
+  position: relative;
+  flex: 1;
+  margin-right: 10px;
+  height: 63rpx;
+  font-size: 24px; /* Adjust the font size as needed */
+  text-align: center;
+  border: 1px solid rgb(36, 24, 24); /* 添加边框 */
+  background-color: white; /* 设置背景色为白色 */
+  color: rgb(187, 187, 187); /* 设置文字颜色为黑色 */
+  border-radius: 50px;
+}
+.search-icon {
+  position: absolute; /* 设置子组件为绝对定位 */
+  left: 0; /* 将子组件设置在父组件的最左端 */
+  top: 50%; /* 将子组件垂直居中 */
+  transform: translateY(-50%); /* 调整子组件位置，使其垂直居中 */
+  padding: 30px 10px; /* 子组件内边距 */
+  color: rgb(0, 0, 0); /* 设置文字颜色为黑色 */
+  font-size: 24px;
+
+}

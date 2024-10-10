@@ -1,0 +1,35 @@
+.search-container {
+  display: flex;
+  margin: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: #4fc08d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.result-item {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.project-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  color: rgb(0, 0, 0); /* Optional: Change text color for better visibility */
+  font-size: 24px; /* Adjust the font size as needed */
+}

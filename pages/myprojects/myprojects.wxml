@@ -1,0 +1,29 @@
+<view class="container">
+  <van-divider contentPosition="center">我的项目</van-divider>
+  <block wx:if="{{noResults}}">
+    <view class="no-results">未找到相关项目</view>
+  </block>
+  <block wx:for="{{projects}}" wx:key="index">
+    <van-card
+      thumb="{{item.imagePath}}"
+      data-project="{{item}}"
+      bindtap="viewdetails"
+    >
+      <view slot="title" class="project-title">{{item.projectName}}</view>
+      <view slot="footer">
+        <text class="sub">发布人:{{item.user}}</text>
+        <van-button size="mini">查看详情</van-button>
+        <van-button
+        class="delete-button"
+        size="mini"
+        catchtap="deleteProject"
+        type="danger"
+        data-id="{{item._id}}"
+      >
+        删除
+      </van-button>
+      </view>
+      
+    </van-card>
+  </block>
+</view>

@@ -1,0 +1,20 @@
+<view class="container">
+  <view class="form-item">
+    <text class="label">项目名称:</text>
+    <textarea class="input project-name {{shakeName ? 'shake' : ''}}" placeholder="请输入项目名称" bindinput="onNameInput" style="font-size: {{nameFontSize}};" animationend="resetShake" data-field="shakeName"></textarea>
+  </view>
+  <view class="form-item">
+    <text class="label">项目描述:</text>
+    <textarea class="input project-desc {{shakeDesc ? 'shake' : ''}}" placeholder="请输入项目描述" bindinput="onDescInput" style="font-size: {{descFontSize}};" animationend="resetShake" data-field="shakeDesc"></textarea>
+  </view>
+  <view class="form-item">
+    <text class="label">项目合伙人:</text>
+    <textarea class="input project-partner {{shakePartner ? 'shake' : ''}}" placeholder="请输入项目合伙人" bindinput="onPartnerInput" style="font-size: {{partnerFontSize}};" animationend="resetShake" data-field="shakePartner"></textarea>
+  </view>
+  <view class="form">
+    <text class="label">上传图片:</text>
+    <image wx:if="{{imagePath}}" src="{{imagePath}}" mode="aspectFit" class="image-preview" style="margin-bottom: 20px;" />
+    <button class="button" bindtap="chooseImage">选择图片</button>
+  </view>
+  <button class="button submit-button" bindtap="submitForm">提交</button>
+</view>

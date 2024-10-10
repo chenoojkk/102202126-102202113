@@ -1,0 +1,20 @@
+<view class="container">
+  <image src="{{project.imagePath}}" mode="aspectFit"></image>
+  <view class="desc">
+    <text class="label">标题:</text>
+    <text class="content">{{project.projectName}}</text>
+  </view>
+  <view class="desc">
+    <text class="label">描述:</text>
+    <text class="content">{{project.projectDesc}}</text>
+  </view>
+  <view class="desc">
+    <text class="label">合伙人:</text>
+    <text class="content">{{project.projectPartner}}</text>
+  </view>
+  <view slot="footer">
+    <van-button size="mini" type="primary" bindtap="applyToJoin" class="apply-button">申请加入</van-button>
+    <van-button size="mini" type="primary"  class="apply-button1">' e2121    '</van-button>
+    <van-button size="mini" type="info" bindtap="contactUs" class="contact-button">联系我们</van-button>
+  </view>
+</view>

@@ -1,0 +1,27 @@
+<view class="container">
+  <view class="form-item">
+    <text class="label">姓名:</text>
+    <input class="input name-input" type="text" placeholder="请输入姓名" bindinput="onNameInput" value="{{name}}" />
+  </view>
+  <view class="form-item">
+    <text class="label">年级:</text>
+    <input class="input grade-input" type="text" placeholder="请输入年级" bindinput="onGradeInput" value="{{grade}}" />
+  </view>
+  <view class="form-item">
+    <text class="label">学院:</text>
+    <input class="input college-input" type="text" placeholder="请输入学院" bindinput="onCollegeInput" value="{{college}}" />
+  </view>
+  <view class="form-item">
+    <text class="label">邮箱:</text>
+    <input class="input email-input" type="email" placeholder="请输入邮箱" bindinput="onEmailInput" value="{{email}}" />
+  </view>
+  <view class="form-item">
+    <text class="label">电话:</text>
+    <input class="input phone-input" type="tel" placeholder="请输入电话" bindinput="onPhoneInput" value="{{phone}}" />
+  </view>
+  <view class="form-item">
+    <text class="label">个人介绍:</text>
+    <textarea class="input intro-input" placeholder="请输入个人介绍" bindinput="onIntroInput" value="{{intro}}"></textarea>
+  </view>
+  <button class="button submit-button" bindtap="submitForm">提交</button>
+</view>

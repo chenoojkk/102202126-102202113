@@ -1,0 +1,28 @@
+<view class="searchinfo">
+  <view class="search-container">
+    <input
+      type="text"
+      value="{{query}}"
+      placeholder="请输入搜索关键词"
+      bindinput="onInput"
+    />
+    <button bindtap="onSearch">搜索</button>
+  </view>
+  <view wx:if="{{noResults}}">
+    <text>未找到相关项目</text>
+  </view>
+  <block wx:for="{{results}}" wx:key="index">
+    <van-card
+      title="{{project.projectName}}"
+      thumb="{{item.imagePath}}"
+      data-project="{{item}}"
+      bindtap="viewdetails"
+    >
+      <view slot="title" class="project-title">{{item.projectName}}</view>
+      <view slot="footer">
+        <text class="sub">发布人:{{item.user}}</text>
+        <van-button size="mini">查看详情</van-button>
+      </view>
+    </van-card>
+  </block>
+</view>

@@ -1,0 +1,55 @@
+.face {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  margin-right: 30rpx;
+  border: 2rpx solid #ccc; /* 添加边框 */
+}
+
+.user-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* 确保左右对齐 */
+  margin: 20rpx 10rpx;
+  padding: 20rpx;
+  background-color: #f9f9f9; /* 添加背景色 */
+  border-radius: 10rpx; /* 添加圆角 */
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.1); /* 添加阴影 */
+  align-items: center; /* 垂直居中 */
+}
+
+.nick-name {
+  margin-top: 10rpx;
+  font-size: 32rpx; /* 调整字体大小 */
+  font-weight: bold; /* 加粗字体 */
+  color: #333; /* 修改字体颜色 */
+}
+
+.left {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* 垂直居中 */
+}
+
+.right {
+  margin-top: 10rpx;
+  font-size: 28rpx; /* 调整字体大小 */
+  color: #666; /* 修改字体颜色 */
+}
+
+.label {
+  color: #1989fa; /* 修改字体颜色 */
+  font-size: 36rpx;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  font-weight: bold;
+  text-transform: uppercase; /* 全部大写 */
+}
+
+.add-friend-button {
+  background-color: #1989fa; /* 按钮背景色 */
+  color: #fff; /* 按钮文字颜色 */
+  border: none; /* 去掉边框 */
+  padding: 10rpx 20rpx; /* 按钮内边距 */
+  border-radius: 5rpx; /* 按钮圆角 */
+}

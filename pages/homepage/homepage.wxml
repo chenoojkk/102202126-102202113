@@ -1,0 +1,40 @@
+<view class="homepage">
+  <view class="search-container">
+    <van-button type="default" class="search-button" bindtap="navigateToSearch">
+      <van-icon name="search" class="search-icon" />
+      {{latestProjectName ? latestProjectName : '搜索'}}
+    </van-button>
+    <van-icon name="plus" size="30px" bindtap="navigateToPublish"/>
+  </view>
+  <swiper autoplay interval="3000" indicator-dots indicator-active-color="#ffffff">
+    <swiper-item>
+      <image src="../../images/1.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../images/2.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../images/3.png"></image>
+    </swiper-item>
+  </swiper>
+  <van-divider
+    contentPosition="center"
+    customStyle="color: #1989fa; border-color: #1989fa; font-size: 18px;"
+  >
+    项目
+  </van-divider>
+  <block wx:for="{{results}}" wx:key="index">
+    <van-card
+      title="{{project.projectName}}"
+      thumb="{{item.imagePath}}"
+      data-project="{{item}}"
+      bindtap="viewdetails"
+    >
+      <view slot="title" class="project-title">{{item.projectName}}</view>
+      <view slot="footer">
+        <text class="sub">发布人:{{item.user}}</text>
+        <van-button size="mini">查看详情</van-button>
+      </view>
+    </van-card>
+  </block>
+</view>

@@ -1,0 +1,16 @@
+<view class="container">
+  <image src="{{project.imagePath}}" mode="aspectFit"></image>
+  <view class="desc">
+    <text class="label">标题:</text>
+    <text class="content">{{project.projectName}}</text>
+  </view>
+  <view class="desc">
+    <text class="label">描述:</text>
+    <text class="content">{{project.projectDesc}}</text>
+  </view>
+  <view class="desc">
+    <text class="label">合伙人:</text>
+    <text class="content">{{project.projectPartner}}</text>
+  </view>
+    
+</view>

@@ -1,0 +1,15 @@
+<!--pages/IdentityAuthentication/student/student.wxml-->
+<view></view>
+<view class="label-list">
+    <view class="label">学号</view>
+    <view class="input-box">
+        <input type="text" placeholder="请输入学号"/>
+    </view>
+</view>
+
+<view class="label-list">
+    <view class="label">姓名</view>
+    <view class="input-box">
+        <input type="text" placeholder="请输入姓名" />
+    </view>
+</view>
